@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="utf-8">
+		<title>Home | Compound</title>
+		<link rel="stylesheet" href="global.css" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script>
+        
+        $(document).ready(function () {
+            var images = new Array();
+            var cuur_index = 0;
+
+            var imageCnt = 0;
+            function imageLoad() {
+                imageCnt++;
+                if (imageCnt == 3) {
+                    ShowSlideShow();
+                }
+            }
+            function preload() {
+                for (i = 0; i < preload.arguments.length; i++) {
+                    images[i] = new Image();
+                    images[i].onload = imageLoad();
+                    images[i].src = preload.arguments[i];                    
+                }
+            }
+
+            preload(
+                "images/1.jpg",
+                "images/2.jpg",
+                "images/3.jpg"
+            );
+
+            preload();
+            function ShowSlideShow() {
+                cuur_index = 0;
+                $("#m_image").attr("src", images[0].src);
+                $("#back").show();
+                $("#forward").show();
+
+            }
+
+            $("#back").click(function () {
+                cuur_index--;
+                if (cuur_index < 0) cuur_index = 2;
+                $("#m_image").fadeOut(function () {
+                    $("#m_image").attr("src", images[cuur_index].src);
+                    $("#m_image").fadeIn();
+                });
+                
+            });
+
+            $("#forward").click(function () {
+                cuur_index++;
+                if (cuur_index > 2) cuur_index = 0;
+                $("#m_image").fadeOut(function () {
+                    $("#m_image").attr("src", images[cuur_index].src);
+                    $("#m_image").fadeIn();
+                });                
+            });
+
+            $("#services_menu").mouseover(function () {                
+                $("#services_menu_list").show();
+            });
+
+            $("#services_menu").mouseleave(function () {
+                $("#services_menu_list").hide();
+            });
+
+        });
+
+        
+
+       
+    </script>
+</head>
+<body>
+	<a id="Top"></a>
+	<div id="wrapper">
+		<div id="header">
+			<div id="quote">
+			<a href="quote.html"><img src="images/quote.png" width="200" height="50" alt="Quote"></a>
+			</div>
+			<div id="logo">
+			<a href="index.html"><img src="images/thecompound-logo.png" width="200" height="160" alt="Compound Ent. Logo"></a>
+			</div>
+		</div>
+
+		<div id="navigation">
+			<ul>
+				<li class="navcurrent">HOME</li>
+				<li><a href="about.html">ABOUT</a></li>
+                <li id="services_menu"  style="position:relative;">
+                    <a href="">SERVICES</a>
+                    <ul id="services_menu_list">
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="video.html">VIDEO</a></li>
+                        <li><a href="clients.html">CLIENTS</a></li>
+                        <li><a href="sitemap.html">SITEMAP</a></li>
+                    </ul>
+                </li>
+				<li><a href="video.html">VIDEO</a></li>
+				<li><a href="clients.html">CLIENTS</a></li>		
+				<li><a href="contact.html">CONTACT</a></li>	
+				<li><a href="sitemap.html">SITEMAP</a></li>		
+			</ul>
+		</div>
+		
+		<div id="content">
+	        <div style="width:100%;text-align:center;position:relative;background-color:black;margin-left:auto;margin-right:auto">
+				<img id="back" src="images/left.png" width="50" style="cursor:pointer;position:absolute;left:10px;top:50%;display:none;" /> 
+				<img id="forward" src="images/right.png"  width="50" style="cursor:pointer; position:absolute;right:10px;top:50%;display:none" />         
+				<img id="m_image" src="images/1.jpg " style="" width="750" height="450" />
+			</div>
+			
+			<div style="padding-left:30px;"><h3>Compound Entertainment Inc.</h3>
+			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+			Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+			Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+			Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+			Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p></div>
+			
+		</div>
+		
+		<div id="navbottom">
+			<a href="index.html"><img src="images/home.png" width="30" height="30" alt="home"></a>
+			<a href="#Top" id="topbotton"><img src="images/top.png" width="30" height="30" alt="home"></a>
+		</div>
+		
+		<div id="footer">
+           
+		    <div class="container">
+			<div class="col1">
+			<h3>Compound Entertainment</h3>
+			Music Rd,Vancouver,<br>
+			BC, VMU SIC<br>
+			Phone:604-440-7084<br>
+			</div>
+			<div class="col2">
+			<h3>Contact</h3>
+			booking@arazproduction.com<br>
+			Phone: 604-440-7084</div>
+			<div class="col3">
+			<h3>Connect</h3>
+			<a href="https://www.facebook.com/thecompoundent" target="_blank"><img src="images/fb.jpg" width="30" height="30" alt="facebook"></a>
+			<a href="https://instagram.com/thecompoundent" target="_blank"><img src="images/insta.png" width="30" height="30" alt="facebook"></a>
+			<a href="https://twitter.com/araznamavar" target="_blank"><img src="images/twitter.jpg" width="30" height="30" alt="facebook"></a>
+
+			</div>
+			</div>
+			<div style="clear:both">
+			</div>
+			<p>Copyright © 2015 Compound Entertainment. All Rights Reserved. Designed by Farnaz Rashidi.</p>
+			
+		</div>
+				
+	</div>
+
+</body>
+</html>

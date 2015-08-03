@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="utf-8">
+		<title>Quote | Compound</title>
+		<link rel="stylesheet" href="global.css" type="text/css">
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script>
+        
+        $(document).ready(function () {
+         
+            $("#services_menu").mouseover(function () {                
+                $("#services_menu_list").show();
+            });
+
+            $("#services_menu").mouseleave(function () {
+                $("#services_menu_list").hide();
+            });
+
+        });
+
+    </script>
+</head>
+<body>
+	<a id="Top"></a>
+	<div id="wrapper">
+		<div id="header">
+			<div id="quote">
+			<a href="quote.html"><img src="images/quote.png" width="200" height="50" alt="Quote"></a>
+			</div>
+			<div id="logo">
+			<a href="index.html"><img src="images/thecompound-logo.png" width="170" height="160" alt="Compound Ent. Logo"></a>
+			</div>
+	    </div>
+		
+		<div id="navigation">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li id="services_menu"  style="position:relative;">
+						<a href="">ABOUT</a>
+						<ul id="services_menu_list">
+							<li><a href="about.html">HISTORY</a></li>
+							<li><a href="staff.html">STAFF</a></li>
+						</ul>
+                    </li>		
+					<li><a href="navcurrent">SERVICES</a></li>	
+					<li><a href="video.html">VIDEO</a></li>
+					<li><a href="clients.html">CLIENTS</a></li>				
+					<li><a href="contact.html">CONTACT</a></li>
+					<li><a href="sitemap.html">SITEMAP</a></li>
+								
+				</ul>
+		</div>
+
+
+	    <div id="content">
+			<div id="contactform">
+			<h2>Request a quote</h2>
+			<form method="post" action="formmail.php">
+			<input type="hidden" name="recipient" id="recipient" value="farnaz.rashidi@gmail.com">
+			<input type="hidden" name="subject" id="subject" value="request a quote">
+			<input type="hidden" name="redirect" id="redirect" value="thanks.html">
+			<input type="hidden" name="sort" id="sort" value="order:name,email,source,service1,service2,service3,service4">
+			
+			<div class="formrowoff">
+			<label class="labelcol">Name:</label>
+			<input type="text" name="name" id="name" size="40">
+			</div>
+
+			<div class="formrow">
+			<label class="labelcol">Email:</label>
+			<input type="text" name="email" id="email" size="40">
+			</div>
+			
+			<div class="formrowoff">
+			<label class="labelcol">Where did you hear about us?</label>
+			<select name="source" id="source">
+				<option selected="selected">Please choose</option>
+				<option value="search">Search engine</option>
+				<option value="friend">From a friend</option>
+				<option value="wall">Other</option>
+			</select>
+			<br class="clearleft">
+			</div>
+
+			<div class="formrow">
+			<label class="labelcol">What services are you interested in?</label>
+			<div class="elcol">
+			<input type="checkbox" name="service1" id="service1" value="recording and mixing">Recording and Mixing<br>
+			<input type="checkbox" name="service2" id="service2" value="mastering">Mastering<br>
+			<input type="checkbox" name="service3" id="service3" value="videos">Videos<br>
+			<input type="checkbox" name="service4" id="service4" value="beats"> Beats
+			</div>
+			</div>
+			
+			<div class="formrowoff">
+			<label class="labelcol">Special Request:</label>
+			<textarea name="comments" id="comments" rows="5" cols="42"></textarea>
+			</div>
+			
+			<div class="formsubmit">
+			<input type="submit" value=" Submit form "> &nbsp;&nbsp; 
+			<input type="reset" value=" Reset form">
+			</div>
+			
+			</form>
+		    </div>
+	    </div>
+	
+		<div id=navbottom>
+		<a href="index.html"><img src="images/home.png" width="30" height="30" alt="home"></a>
+		<a href="#Top" id="topbotton"><img src="images/top.png" width="30" height="30" alt="home"></a>
+		</div>
+        <div id="footer">
+		    <div class="container">
+				<div class="col1">
+				<h3>Compound Entertainment</h3>
+				Music Rd,Vancouver,<br>
+				BC, VMU SIC<br>
+				Phone:604-440-7084<br>
+				</div>
+				<div class="col2">
+				<h3>Contact</h3>
+				booking@arazproduction.com<br>
+				Phone: 604-440-7084
+				</div>
+				<div class="col3">
+				<h3>Connect</h3>
+				<a href="https://www.facebook.com/thecompoundent" target="_blank"><img src="images/fb.jpg" width="30" height="30" alt="facebook"></a>
+				<a href="https://instagram.com/thecompoundent" target="_blank"><img src="images/insta.png" width="30" height="30" alt="facebook"></a>
+				<a href="https://twitter.com/araznamavar" target="_blank"><img src="images/twitter.jpg" width="30" height="30" alt="facebook"></a>
+				</div>
+			</div>
+			<div style="clear:both">
+			</div>
+			<p>Copyright © 2015 Compound Entertainment. All Rights Reserved. Designed by Farnaz Rashidi.</p>
+		</div>
+    </div>
+</body>
+</html>

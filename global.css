@@ -1,0 +1,263 @@
+/* primary rules
+----------------------*/
+
+body {
+	
+	background:url('images/backg2.jpg') repeat-x;
+	background-color:black;
+	text-align: center;
+	}
+
+#wrapper {
+	width: 1000px;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: arial, helvetica, sans-serif;
+	font-size: .90em;
+	/*border:solid red;*/
+	}
+	
+#quote{
+ float:right;
+ margin:60px 20px 0 0;
+ border-radius:25px;
+ /*border: solid yellow;*/
+ }
+
+#header {
+	padding-left: 25px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 0;
+	background-color: black;
+	/*border: solid blue;*/
+	}
+	
+
+#logo{
+ width:300px;
+ /*border: solid yellow; */
+ }
+ 
+	
+#navigation {
+	background-color:#2A2A2A;
+	height:40px;		
+}
+
+#navigation ul{
+	height:40px;
+	margin:0;
+}
+
+#navigation li {
+	  display: inline-block;
+	  padding:12px 35px 10px 35px;
+}
+
+#services_menu_list {
+    display:none;
+    position: absolute;
+    left: 0px;
+    top: 35px;
+    z-index: 1;
+    background-color: rgb(42, 42, 42);
+    height: auto;
+    padding: 10px;
+    height:auto !important;
+}
+
+#navigation .sub_menu li {
+	  display: block !important;
+}
+
+
+#navigation a:link ,#navigation a:visited{
+	color: #818181;
+	text-decoration: none;
+	font-weight:normal;
+	}
+	
+#navigation a:hover {
+	text-decoration: none;
+	color: #E8E8E8;
+	/*background-color: #c9c5bb;*/
+	}
+	
+	
+#content {
+	padding: 30px;
+	margin-bottom: 0px;
+	position: relative;
+	background: #fff;
+	overflow:auto;
+	/*border: solid yellow;*/
+}
+
+#map{
+	text-align:center;
+}
+
+#navbottom{
+	background-color:#2A2A2A;
+	height:30px;
+}
+
+#topbotton{
+	float:right;
+}
+
+#footer{
+	margin-bottom:20px;
+	padding: 10px;
+	background-color: #c4bba8;
+	/*border:solid blue;*/
+}
+
+#footer p{
+	margin:30px;
+	font-size:0.9em;
+}
+
+#social {
+    margin:  10px auto;
+    width: 900px;
+}
+
+#social div {
+    width: 33%;
+}
+#video {
+    float: left;
+}
+
+#tweet{
+    float:right;
+}
+
+/* ----------------class styles: ----------------*/
+
+.navcurrent {
+	color: #249014;
+	background-color: white;
+	text-decoration: none;
+}
+
+.container {
+    margin:  10px auto;
+    width: 900px;
+}
+
+.container div {
+    width: 33%;
+}
+.col1 {
+    float: left;
+}
+.col2 {
+    display:inline-block;
+}
+.col3 {
+    float:right;
+}
+
+
+
+/* --------------------form styles----------------------*/
+
+#contactform {
+    width:700px;
+	min-width: 600px;
+	border: solid gray 1px;
+	padding:10px;
+	margin:auto;
+	position: relative;
+	}
+	
+.formrow {
+	padding: 5px 0;
+	margin: 10px 0;
+	}
+	
+.formrowoff {
+	padding: 15px 0;
+	margin: 10px 0;
+	background-color: #eee
+	}
+	
+.labelcol {
+	float: left;
+	width: 150px;
+	padding:  0 15px;
+	}
+	
+.elcol {
+	margin-left: 180px;
+	}
+
+.formsubmit {
+    margin:auto;
+    text-align:center;
+	margin-top: 20px;
+	}
+
+.clearleft {
+	clear: left;
+	}
+	
+	
+/*-------------------------twitter styles:-------------------------*/
+	
+.twitter-tweet {
+  display: inline-block;
+  font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 16px;
+  border-color: #eee #ddd #bbb;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  margin: 10px 5px;
+  padding: 0 16px 16px 16px;
+  max-width: 468px;
+  width:100px;
+}
+ 
+.twitter-tweet p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+}
+ 
+.twitter-tweet a {
+  color: inherit;
+  font-weight: normal;
+  text-decoration: none;
+  outline: 0 none;
+}
+ 
+.twitter-tweet a:hover,
+.twitter-tweet a:focus {
+  text-decoration: underline;
+}
+
+
+table{
+	margin: auto;
+	text-align: center;
+	font-size: 1em;
+	
+}
+
+table, th, td {
+   border: 1px solid gray;
+   padding:10px;
+
+}
+
+
+
+
